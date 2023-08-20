@@ -11,7 +11,7 @@
         android:layout_width="166dp"
         android:layout_height="166dp"
         android:layout_marginBottom="4dp"
-        android:background="@drawable/Logo"
+        android:background="@drawable/logo"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,23 +20,24 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="233dp"
+        android:layout_height="69dp"
         android:fontFamily="@font/knewave"
         android:text="CashSlash"
+        android:textAlignment="center"
         android:textSize="45.44dp"
         android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.725" />
+        app:layout_constraintVertical_bias="0.842" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="410dp"
         android:layout_height="327dp"
-        android:background="@drawable/Ellipse"
+        android:background="@drawable/ellipse"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
