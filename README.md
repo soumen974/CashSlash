@@ -9,9 +9,14 @@ The word "Cash" implies money or finances, while "Slash" can evoke the idea of c
 
 Overall, "CashSlash" sounds like a unique and engaging name that has the potential to leave a lasting impression on users and attract them to your app.
 
+----------------------------------------------------------------------------
 
+Figma Design file link:-
+
+https://www.figma.com/file/TWf0CMbzbTwFCOwt8ZVo0I/CashSlash-android-App?type=design&node-id=0%3A1&mode=design&t=ugrbXrlOFwIE0qB6-1
 
 ----------------------------------------------------------------------------
+functionality to be added :-
 
 
 Absolutely, the user interface (UI) of your app should directly align with its main objective of helping roommates split expenses and manage shared financial responsibilities. Keeping the UI simple, intuitive, and focused on the core purpose will enhance the user experience and make the app more effective. Here are some UI design principles and considerations to ensure your UI remains up to the point:
@@ -45,7 +50,6 @@ Absolutely, the user interface (UI) of your app should directly align with its m
 14. **Help & Support:** Provide easily accessible help or FAQ sections for users who may have questions about how to use the app effectively.
 
 Remember that a focused UI doesn't mean sacrificing aesthetics. You can still use appealing colors, typography, and visual elements to create a pleasant and engaging user experience while keeping the primary objective in mind. Continuously gather feedback from users to refine the UI and make sure it aligns with their needs and expectations.
-
 
 
 -------------------------------------------------------------------------------
