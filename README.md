@@ -2,8 +2,9 @@
 money managing app
 
 "CashSlash" 
+copywrite @CashSlash 2023 
 
-is an intriguing and attention-grabbing name for a money managing app. It has a strong and dynamic feel to it, which can resonate with users looking for a modern and efficient solution to manage their finances.
+is an intriguing and attention-grabbing name for a money-managing app. It has a strong and dynamic feel to it, which can resonate with users looking for a modern and efficient solution to manage their finances.
 
 The word "Cash" implies money or finances, while "Slash" can evoke the idea of cutting expenses or managing them efficiently. This combination creates a sense of empowerment, suggesting that the app can help users take control of their finances and make smart money decisions.
 
