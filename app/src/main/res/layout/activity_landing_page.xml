@@ -9,8 +9,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="413dp"
-        android:layout_height="472dp"
+        android:layout_width="414dp"
+        android:layout_height="564dp"
         android:layout_marginTop="52dp"
         android:background="@drawable/landing11"
         android:orientation="horizontal"
@@ -38,7 +38,7 @@
         android:id="@+id/button3"
         android:layout_width="300dp"
         android:layout_height="56dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginBottom="84dp"
         android:background="@drawable/custom_btn"
         android:text="Sign Up"
         android:textAlignment="center"
@@ -46,5 +46,6 @@
         android:textSize="20.38dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
