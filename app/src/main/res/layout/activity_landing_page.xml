@@ -11,10 +11,11 @@
         android:id="@+id/linearLayout2"
         android:layout_width="414dp"
         android:layout_height="564dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/landing11"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></LinearLayout>
 
