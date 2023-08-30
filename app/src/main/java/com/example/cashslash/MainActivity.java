@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         timer = new Timer();
+
+//        Timre method
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
