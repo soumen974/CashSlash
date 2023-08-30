@@ -10,7 +10,7 @@ import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
 
-    Timer timer;
+    Timer  timer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
