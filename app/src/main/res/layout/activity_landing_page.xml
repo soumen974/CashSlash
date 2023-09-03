@@ -20,27 +20,30 @@
         app:layout_constraintTop_toTopOf="parent"></LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/login"
         android:layout_width="300dp"
         android:layout_height="56dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/btn_bg"
+        android:onClick="log"
         android:text="Log in"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20.38dp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/sign"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.561" />
+        app:layout_constraintVertical_bias="0.567" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/sign"
         android:layout_width="300dp"
         android:layout_height="56dp"
         android:layout_marginBottom="84dp"
         android:background="@drawable/custom_btn"
+        android:onClick="sin"
         android:text="Sign Up"
         android:textAlignment="center"
         android:textColor="#510063"
