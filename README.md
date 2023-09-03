@@ -1,9 +1,6 @@
 # CashSlash: Manage Your Outflow
 
 
-
-**Copyright © CashSlash 2023. All rights reserved.**
-
 Welcome to CashSlash, the modern solution for efficient money management. Our app's name exudes dynamism and empowerment, symbolizing your ability to take control of your finances and make informed decisions.
 
 ## Overview
@@ -49,5 +46,6 @@ Explore our app's user interface and design concepts on Figma:
 We value your feedback! Help us enhance your experience by sharing your thoughts and suggestions. Together, we're shaping a brighter financial future with CashSlash.
 
 ---
+**Copyright © CashSlash 2023. All rights reserved.**
 
 *Note: This README provides a high-level overview of CashSlash's features and benefits. For detailed usage instructions and technical information, please refer to the official documentation.*
