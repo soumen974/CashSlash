@@ -9,7 +9,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frameLayout"
-        android:layout_width="429dp"
+        android:layout_width="410dp"
         android:layout_height="672dp"
         android:background="@drawable/signstore"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -52,11 +52,12 @@
 
         <EditText
             android:id="@+id/email"
-            android:layout_width="343dp"
-            android:layout_height="69dp"
+            android:layout_width="344dp"
+            android:layout_height="59dp"
             android:background="@drawable/input_bg"
             android:ems="10"
             android:inputType="text"
+            android:paddingLeft="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.506"
@@ -82,11 +83,12 @@
 
         <EditText
             android:id="@+id/password"
-            android:layout_width="343dp"
-            android:layout_height="69dp"
+            android:layout_width="344dp"
+            android:layout_height="59dp"
             android:background="@drawable/input_bg"
             android:ems="10"
             android:inputType="textPassword"
+            android:paddingLeft="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.493"
@@ -169,7 +171,7 @@
         android:id="@+id/back1"
         android:layout_width="49dp"
         android:layout_height="42dp"
-        android:background="@drawable/round_btn_bg"
+        android:background="@drawable/backkkkk"
         android:onClick="back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
