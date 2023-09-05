@@ -112,5 +112,5 @@ public class login extends AppCompatActivity {
     {
         return Patterns.EMAIL_ADDRESS.matcher(target).matches();
     }
-
+// should i connect database
 }
