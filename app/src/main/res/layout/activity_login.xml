@@ -9,8 +9,8 @@
 
     <Button
         android:id="@+id/back2"
-        android:layout_width="49dp"
-        android:layout_height="42dp"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
         android:background="@drawable/backkkkk"
         android:onClick="backk"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,8 +33,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frameLayout"
-        android:layout_width="408dp"
-        android:layout_height="668dp"
+        android:layout_width="411dp"
+        android:layout_height="697dp"
         android:background="@drawable/loginstore"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,8 +75,8 @@
 
         <EditText
             android:id="@+id/lemail"
-            android:layout_width="348dp"
-            android:layout_height="56dp"
+            android:layout_width="344dp"
+            android:layout_height="59dp"
             android:background="@drawable/input_bg"
             android:ems="10"
             android:inputType="text"
@@ -106,8 +106,8 @@
 
         <EditText
             android:id="@+id/lrepassword"
-            android:layout_width="343dp"
-            android:layout_height="55dp"
+            android:layout_width="344dp"
+            android:layout_height="59dp"
             android:background="@drawable/input_bg"
             android:ems="10"
             android:inputType="textPassword"
@@ -122,7 +122,7 @@
         <EditText
             android:id="@+id/lpassword"
             android:layout_width="344dp"
-            android:layout_height="53dp"
+            android:layout_height="59dp"
             android:background="@drawable/input_bg"
             android:ems="10"
             android:inputType="textPassword"
