@@ -26,19 +26,20 @@ public class signin extends AppCompatActivity {
         Signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                if (User.getText().toString().equals("ritesh@gmail.com")&& Pass.getText().toString().equals("12345"))
+                String mail = User.getText().toString();
+                String pass = Pass.getText().toString();
+                if(mail.length()==0 || pass.length()==0)
                 {
-                    Toast.makeText(signin.this,"Signup succesfully",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Please Fill all details",Toast.LENGTH_SHORT).show();
                 }
                 else
                 {
-                    Toast.makeText(signin.this,"signup Unsuccesfully",Toast.LENGTH_LONG).show();
-
+                    Toast.makeText(getApplicationContext(),"Sigup Succes",Toast.LENGTH_SHORT).show();
                 }
 
             }
         });
+
     }
     public void logup(View view) {
         Intent intent = new Intent(signin.this, login.class);
