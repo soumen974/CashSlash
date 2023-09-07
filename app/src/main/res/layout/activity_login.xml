@@ -10,7 +10,7 @@
     <Button
         android:id="@+id/back2"
         android:layout_width="49dp"
-        android:layout_height="42dp"
+        android:layout_height="47dp"
         android:background="@drawable/backkkkk"
         android:onClick="backk"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.024"
-        app:srcCompat="@drawable/loginimg" />
+        app:srcCompat="@drawable/rebg" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frameLayout"

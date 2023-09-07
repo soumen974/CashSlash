@@ -9,7 +9,7 @@
         android:id="@+id/imageView"
         android:layout_width="46dp"
         android:layout_height="46dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,10 +23,10 @@
         android:layout_marginEnd="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.992"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049"
+        app:layout_constraintVertical_bias="0.051"
         app:srcCompat="@drawable/menuopen" />
 
     <ImageView
@@ -40,4 +40,190 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.119"
         app:srcCompat="@drawable/homegroup_liniearback" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="96dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="000"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:text="Rs. 000"
+        android:textAlignment="viewStart"
+        android:textColor="@color/buttonColor1"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="96dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Rs. 000"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:text="Rs. 000"
+        android:textAlignment="viewStart"
+        android:textColor="@color/buttonColor2"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="74dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="@color/buttonColor1"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Borrowed"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12.63sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <EditText
+        android:id="@+id/editTextNumber4"
+        android:layout_width="74dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:backgroundTint="@color/buttonColor2"
+        android:ems="10"
+        android:fontFamily="@font/kodchasan"
+        android:inputType="number"
+        android:text="Expence"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12.63sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="363dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="212dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:srcCompat="@drawable/input_bg"
+        app:tint="@color/buttonColor3" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/kodchasan"
+        android:text="Groups"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:srcCompat="@drawable/vector" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="266dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="136dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/group_33168" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="23.55dp"
+        android:layout_height="23.55dp"
+        app:srcCompat="@drawable/hurry"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="501dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="25.55dp"
+        android:layout_height="24.55dp"
+        app:srcCompat="@drawable/hurry"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="566dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/textView11"
+        android:layout_width="407dp"
+        android:layout_height="76dp"
+        android:background="@drawable/bottom"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="24.75dp"
+        android:layout_height="24.75dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/group_line"
+        android:hint="1"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:hint="2"
+        android:background="@drawable/team_line"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="24.75dp"
+        android:layout_height="24.75dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/vector__1_"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="24.75dp"
+        android:layout_height="24.75dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:hint="3"
+        android:background="@drawable/question_answer_line"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
