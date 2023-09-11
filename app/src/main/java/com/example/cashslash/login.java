@@ -46,7 +46,7 @@ public class login extends AppCompatActivity {
                        }
                        else
                        {
-                           Toast.makeText(getApplicationContext(), "Please enter a valid information", Toast.LENGTH_SHORT).show();
+                           Toast.makeText(getApplicationContext(), "Please check email & password", Toast.LENGTH_SHORT).show();
 
                        }
                    }
