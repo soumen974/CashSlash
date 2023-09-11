@@ -16,6 +16,7 @@ public class login extends AppCompatActivity {
     private EditText Repass;
     private Button Logup;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
