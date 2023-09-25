@@ -49,3 +49,5 @@ We value your feedback! Help us enhance your experience by sharing your thoughts
 **Copyright © CashSlash 2023. All rights reserved.**
 
 *Note: This README provides a high-level overview of CashSlash's features and benefits. For detailed usage instructions and technical information, please refer to the official documentation.*
+
+
