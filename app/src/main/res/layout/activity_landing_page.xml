@@ -12,7 +12,7 @@
         android:layout_width="414dp"
         android:layout_height="564dp"
         android:layout_marginTop="40dp"
-        android:background="@drawable/landing11"
+        android:background="@drawable/landing11_op"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.666"
