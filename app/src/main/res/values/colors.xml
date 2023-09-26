@@ -3,4 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="buttonColor">#FF009E</color>
+    <color name="buttonColor1">#FF0000</color>
+    <color name="buttonColor2">#F7CF00</color>
+    <color name="buttonColor3">#FFBF23</color>
+    <color name="buttonColor4">#38FDD7</color>
 </resources>

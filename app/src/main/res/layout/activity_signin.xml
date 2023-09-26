@@ -7,17 +7,6 @@
     android:background="#E6FDE5"
     tools:context=".signin">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="190dp"
-        android:layout_height="162dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024"
-        app:srcCompat="@drawable/loginimg" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frameLayout"
         android:layout_width="410dp"
@@ -167,12 +156,21 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="190dp"
+        android:layout_height="162dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/rebg" />
 
     <Button
         android:id="@+id/back1"
-        android:layout_width="39dp"
-        android:layout_height="40dp"
+        android:layout_width="49dp"
+        android:layout_height="42dp"
         android:background="@drawable/backkkkk"
         android:onClick="back"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -181,5 +179,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.054" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

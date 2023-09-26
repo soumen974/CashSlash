@@ -28,7 +28,7 @@
         android:layout_width="178dp"
         android:layout_height="190dp"
         android:layout_marginBottom="36dp"
-        android:background="@drawable/logoremovebgpreview"
+        android:background="@drawable/uplogo"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
