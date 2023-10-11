@@ -3,7 +3,6 @@ package com.example.cashslash;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,10 +18,7 @@ public class login extends AppCompatActivity {
     private EditText Repass;
     private Button Logup;
 
-    private Button balog;
 
-
-    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +27,6 @@ public class login extends AppCompatActivity {
         Pass = (EditText)findViewById(R.id.lpassword);
         Repass = (EditText)findViewById(R.id.lrepassword);
         Logup =(Button)findViewById(R.id.login2);
-        balog = (Button)findViewById(R.id.backlogin);
 
         Logup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,13 +61,6 @@ public class login extends AppCompatActivity {
 
             }
         });
-
-        balog.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-            }
-        });
     }
 
 
@@ -80,32 +68,31 @@ public class login extends AppCompatActivity {
         Intent intent = new Intent(login.this, signin.class);
         startActivity(intent);
     }
-//    public void backk(View view) {
-//        Intent intent = new Intent(login.this, Landing_page.class);
-//        startActivity(intent);
-//    }
-
-    @Override
-    public void onBackPressed() {
-        AlertDialog.Builder alt = new AlertDialog.Builder(this);
-        alt.setTitle("Alert !")
-                .setMessage("Do you want to close")
-                .setCancelable(true)
-                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        finish();
-                    }
-                })
-                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.cancel();
-                    }
-                });
-        AlertDialog alert = alt.create();
-        alert.show();
+    public void backk(View view) {
+        onBackPressed();
     }
+
+//    @Override
+//    public void onBackPressed() {
+//        AlertDialog.Builder alt = new AlertDialog.Builder(this);
+//        alt.setTitle("Alert !")
+//                .setMessage("Do you want to close")
+//                .setCancelable(true)
+//                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialogInterface, int i) {
+//                        finish();
+//                    }
+//                })
+//                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialogInterface, int i) {
+//                        dialogInterface.cancel();
+//                    }
+//                });
+//        AlertDialog alert = alt.create();
+//        alert.show();
+//    }
 
 
     // corection password code
