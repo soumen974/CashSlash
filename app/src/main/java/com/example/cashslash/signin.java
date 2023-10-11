@@ -52,29 +52,28 @@ public class signin extends AppCompatActivity {
         startActivity(intent);
     }
     public void back(View view) {
-        Intent intent = new Intent(signin.this, Landing_page.class);
-        startActivity(intent);
+        onBackPressed();
     }
 
-    @Override
-    public void onBackPressed() {
-        AlertDialog.Builder alt = new AlertDialog.Builder(this);
-        alt.setTitle("Alert !")
-                .setMessage("Do you want to close")
-                .setCancelable(false)
-                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        finish();
-                    }
-                })
-                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.cancel();
-                    }
-                });
-        AlertDialog alert = alt.create();
-        alert.show();
-    }
+//    @Override
+////    public void onBackPressed() {
+////        AlertDialog.Builder alt = new AlertDialog.Builder(this);
+////        alt.setTitle("Alert !")
+////                .setMessage("Do you want to close")
+////                .setCancelable(false)
+////                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+////                    @Override
+////                    public void onClick(DialogInterface dialogInterface, int i) {
+////                        finish();
+////                    }
+////                })
+////                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+////                    @Override
+////                    public void onClick(DialogInterface dialogInterface, int i) {
+////                        dialogInterface.cancel();
+////                    }
+////                });
+////        AlertDialog alert = alt.create();
+////        alert.show();
+////    }
 }
