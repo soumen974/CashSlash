@@ -18,6 +18,8 @@ public class login extends AppCompatActivity {
     private EditText Repass;
     private Button Logup;
 
+    private Button baclog;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,7 @@ public class login extends AppCompatActivity {
         Pass = (EditText)findViewById(R.id.lpassword);
         Repass = (EditText)findViewById(R.id.lrepassword);
         Logup =(Button)findViewById(R.id.login2);
+        baclog =(Button)findViewById(R.id.backlogin);
 
         Logup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +64,13 @@ public class login extends AppCompatActivity {
 
             }
         });
+
+        baclog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
     }
 
 
@@ -68,9 +78,9 @@ public class login extends AppCompatActivity {
         Intent intent = new Intent(login.this, signin.class);
         startActivity(intent);
     }
-    public void backk(View view) {
-        onBackPressed();
-    }
+//    public void backk(View view) {
+//        onBackPressed();
+//    }
 
 //    @Override
 //    public void onBackPressed() {

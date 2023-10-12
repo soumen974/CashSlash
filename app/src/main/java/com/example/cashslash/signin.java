@@ -17,6 +17,8 @@ public class signin extends AppCompatActivity {
     private EditText Pass;
     private Button Signin;
 
+    private Button bacsup;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,8 @@ public class signin extends AppCompatActivity {
         User = (EditText)findViewById(R.id.email);
         Pass = (EditText)findViewById(R.id.password);
         Signin =(Button)findViewById(R.id.signinn);
+        bacsup =(Button)findViewById(R.id.backsign);
+
 
         Signin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +47,12 @@ public class signin extends AppCompatActivity {
             }
         });
 
+        bacsup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
     }
 
@@ -51,9 +61,9 @@ public class signin extends AppCompatActivity {
         Intent intent = new Intent(signin.this, login.class);
         startActivity(intent);
     }
-    public void back(View view) {
-        onBackPressed();
-    }
+//    public void back(View view) {
+//        onBackPressed();
+//    }
 
 //    @Override
 ////    public void onBackPressed() {
