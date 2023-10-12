@@ -24,7 +24,7 @@
             android:layout_width="300dp"
             android:layout_height="56dp"
             android:background="@drawable/btn_bg"
-            android:text="Sign Up"
+            android:text="Login"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="20.38dp"
@@ -168,7 +168,7 @@
         app:srcCompat="@drawable/rebg" />
 
     <Button
-        android:id="@+id/back1"
+        android:id="@+id/backsign"
         android:layout_width="49dp"
         android:layout_height="42dp"
         android:background="@drawable/backkkkk"
