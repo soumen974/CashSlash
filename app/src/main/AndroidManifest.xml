@@ -22,7 +22,7 @@
             android:name=".signin"
             android:exported="false" />
         <activity
-            android:name=".login"
+            android:name=".SignUp"
             android:exported="false" />
         <activity
             android:name=".Landing_page"
