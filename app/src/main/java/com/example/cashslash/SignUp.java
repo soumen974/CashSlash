@@ -1,9 +1,7 @@
 package com.example.cashslash;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -12,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class login extends AppCompatActivity {
+public class SignUp extends AppCompatActivity {
     private EditText User;
     private EditText Pass;
     private EditText Repass;
@@ -24,7 +22,7 @@ public class login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_signup);
         User = (EditText)findViewById(R.id.lemail);
         Pass = (EditText)findViewById(R.id.lpassword);
         Repass = (EditText)findViewById(R.id.lrepassword);
@@ -48,7 +46,7 @@ public class login extends AppCompatActivity {
                        if ( isValid(pass) && (isValidEmail(mail)) )
                        {
                            Toast.makeText(getApplicationContext(), "Data uploaded", Toast.LENGTH_SHORT).show();
-                          startActivity(new Intent(login.this, signin.class));
+                          startActivity(new Intent(SignUp.this, SignUp.class));
                        }
                        else
                        {
@@ -75,7 +73,7 @@ public class login extends AppCompatActivity {
 
 
     public void sign(View view) {
-        Intent intent = new Intent(login.this, signin.class);
+        Intent intent = new Intent(SignUp.this, SignUp.class);
         startActivity(intent);
     }
 //    public void backk(View view) {

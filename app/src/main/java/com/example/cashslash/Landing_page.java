@@ -15,7 +15,7 @@ public class Landing_page extends AppCompatActivity {
     }
 
     public void log(View view) {
-        Intent intent = new Intent(Landing_page.this, login.class);
+        Intent intent = new Intent(Landing_page.this, SignUp.class);
         startActivity(intent);
     }
 
