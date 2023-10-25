@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 public class signin extends AppCompatActivity {
 
+//    private boolean isBackPressed = false;
+
     private EditText User;
     private EditText Pass;
     private Button Signin;
@@ -53,37 +55,46 @@ public class signin extends AppCompatActivity {
                 onBackPressed();
             }
         });
-
     }
+
+//    @Override
+//    public void onBackPressed() {
+//        isBackPressed = true;
+//        AlertDialog.Builder alt = new AlertDialog.Builder(this);
+//        alt.setTitle("Alert !")
+//                .setMessage("Do you want to exit")
+//                .setCancelable(false)
+//                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialogInterface, int i) {
+//                        finish();
+//                    }
+//                })
+//                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialogInterface, int i) {
+//                        dialogInterface.dismiss();
+//                    }
+//                });
+//        AlertDialog alert = alt.create();
+//        alert.show();
+//    }
 
 
     public void logup(View view) {
         Intent intent = new Intent(signin.this, login.class);
         startActivity(intent);
     }
+
+//    private void onBackPressedAction() {
+//        if (isBackPressed) {
+//            super.onBackPressed();
+//        }
+//    }
+
 //    public void back(View view) {
 //        onBackPressed();
 //    }
 
-//    @Override
-////    public void onBackPressed() {
-////        AlertDialog.Builder alt = new AlertDialog.Builder(this);
-////        alt.setTitle("Alert !")
-////                .setMessage("Do you want to close")
-////                .setCancelable(false)
-////                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-////                    @Override
-////                    public void onClick(DialogInterface dialogInterface, int i) {
-////                        finish();
-////                    }
-////                })
-////                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-////                    @Override
-////                    public void onClick(DialogInterface dialogInterface, int i) {
-////                        dialogInterface.cancel();
-////                    }
-////                });
-////        AlertDialog alert = alt.create();
-////        alert.show();
-////    }
+
 }

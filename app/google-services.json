@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "480905773551",
+    "project_id": "cashslash-3e60f",
+    "storage_bucket": "cashslash-3e60f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480905773551:android:ff2414d88f9ee6daebb61a",
+        "android_client_info": {
+          "package_name": "com.example.cashslash"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1UJWqeEiwrgltoXD5u6zbNfrpsGr_xk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

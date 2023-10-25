@@ -2,31 +2,21 @@ package com.example.cashslash;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 
-import java.util.Timer;
-import java.util.TimerTask;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
-
-    Timer  timer;
+    FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        timer = new Timer();
-
-//        Timre method
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(MainActivity.this,Landing_page.class);
-                startActivity(intent);
-                finish();
-            }
-        },1000);
+//        auth = FirebaseAuth.getInstance();
+//        if (auth.getCurrentUser() = null){
+//            Intent
+//        }
    }
 }
