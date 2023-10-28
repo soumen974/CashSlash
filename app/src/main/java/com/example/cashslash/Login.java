@@ -4,6 +4,7 @@ package com.example.cashslash;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -22,14 +23,14 @@ public class Login extends AppCompatActivity {
     FirebaseAuth auth;
     String EmailPattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$";
 
-//    private boolean isBackPressed = false;
 
     private EditText Email;
     private EditText Pass;
-    private Button Signin;
+    private Button Loginn;
 
-    private Button bacsup;
+    private Button back;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,11 +40,11 @@ public class Login extends AppCompatActivity {
 
         Email = (EditText)findViewById(R.id.email);
         Pass = (EditText)findViewById(R.id.password);
-        Signin =(Button)findViewById(R.id.signinn);
-        bacsup =(Button)findViewById(R.id.backsign);
+        Loginn =(Button)findViewById(R.id.login);
+        back =(Button)findViewById(R.id.backbtn);
 
 
-        Signin.setOnClickListener(new View.OnClickListener() {
+        Loginn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String mail = Email.getText().toString();
@@ -79,19 +80,16 @@ public class Login extends AppCompatActivity {
             }
         });
 
-        bacsup.setOnClickListener(new View.OnClickListener() {
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onBackPressed();
             }
         });
     }
-
     public void logup(View view) {
         Intent intent = new Intent(Login.this, SignUp.class);
         startActivity(intent);
     }
-
-
 
 }
