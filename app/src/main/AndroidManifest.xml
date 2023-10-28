@@ -28,7 +28,7 @@
             android:name=".Landing_page"
             android:exported="false" />
         <activity
-            android:name=".Loading"
+            android:name=".Splash"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

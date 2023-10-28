@@ -172,7 +172,6 @@
         android:layout_width="49dp"
         android:layout_height="42dp"
         android:background="@drawable/backkkkk"
-        android:onClick="back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.042"
