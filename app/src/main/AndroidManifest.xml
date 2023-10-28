@@ -19,7 +19,7 @@
             android:name=".Homegroup"
             android:exported="false" />
         <activity
-            android:name=".signin"
+            android:name=".Login"
             android:exported="false" />
         <activity
             android:name=".SignUp"

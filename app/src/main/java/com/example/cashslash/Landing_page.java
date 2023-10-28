@@ -15,12 +15,14 @@ public class Landing_page extends AppCompatActivity {
     }
 
     public void log(View view) {
-        Intent intent = new Intent(Landing_page.this, SignUp.class);
+        Intent intent = new Intent(Landing_page.this, Login.class);
         startActivity(intent);
+        finish();
     }
 
     public void sin(View view) {
-        Intent intent1 = new Intent(Landing_page.this, signin.class);
+        Intent intent1 = new Intent(Landing_page.this, SignUp.class);
         startActivity(intent1);
+        finish();
     }
 }

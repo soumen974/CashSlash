@@ -1,149 +1,118 @@
 package com.example.cashslash;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.Firebase;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
 public class SignUp extends AppCompatActivity {
-    private EditText User;
+    private EditText Email;
     private EditText Pass;
     private EditText Repass;
-    private Button Logup;
+    private Button Signup;
+    private Button back;
 
-    private Button baclog;
+    String EmailPattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$";
+    FirebaseAuth auth;
+    FirebaseDatabase database;
+    FirebaseStorage storage;
 
 
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-        User = (EditText)findViewById(R.id.lemail);
-        Pass = (EditText)findViewById(R.id.lpassword);
-        Repass = (EditText)findViewById(R.id.lrepassword);
-        Logup =(Button)findViewById(R.id.login2);
-        baclog =(Button)findViewById(R.id.backlogin);
 
-        Logup.setOnClickListener(new View.OnClickListener() {
+        database = FirebaseDatabase.getInstance();
+        storage = FirebaseStorage.getInstance();
+
+        auth = FirebaseAuth.getInstance();
+
+        Email = (EditText)findViewById(R.id.semail);
+        Pass = (EditText)findViewById(R.id.spassword);
+        Repass = (EditText)findViewById(R.id.srepassword);
+        Signup =(Button)findViewById(R.id.signup);
+
+        back =(Button)findViewById(R.id.back);
+
+
+
+        Signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String mail = User.getText().toString();
+                String mail = Email.getText().toString();
                 String pass = Pass.getText().toString();
                 String repass = Repass.getText().toString();
-                if(mail.length()==0 || pass.length()==0 || repass.length()==0)
-                {
-                    Toast.makeText(getApplicationContext(),"Please Fill all details",Toast.LENGTH_SHORT).show();
-                }
-                else
-                {
-                   if (pass.compareTo(repass)==0)
-                   {
-                       if ( isValid(pass) && (isValidEmail(mail)) )
-                       {
-                           Toast.makeText(getApplicationContext(), "Data uploaded", Toast.LENGTH_SHORT).show();
-                          startActivity(new Intent(SignUp.this, SignUp.class));
-                       }
-                       else
-                       {
-                           Toast.makeText(getApplicationContext(), "Please check email & password", Toast.LENGTH_SHORT).show();
+                String status = "I am using CashSlash";
+                    if (TextUtils.isEmpty(mail) || TextUtils.isEmpty(pass) || TextUtils.isEmpty(repass))
+                    {
+                        Toast.makeText(SignUp.this,"Please enter valid information", Toast.LENGTH_SHORT).show();
+                    } else if (!mail.matches(EmailPattern)) {
+                        Email.setError("Type a valid Email");
+                    } else if (pass.length()<6) {
+                        Pass.setError("Password must be 6 characters or more");
+                    } else if (!pass.equals(repass)) {
+                        Pass.setError("Password doesn't match");
+                    }else {
+                        auth.createUserWithEmailAndPassword(mail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()){
+                                    String id = task.getResult().getUser().getUid();
+                                    DatabaseReference reference = database.getReference().child("user").child(id);
+                                    StorageReference storageReference = storage.getReference().child("Upload").child(id);
 
-                       }
-                   }
-                   else
-                   {
-                       Toast.makeText(getApplicationContext(),"Password didn't match",Toast.LENGTH_SHORT).show();
-                   }
-                }
+                                    Users users = new Users(id,mail,pass,status);
+                                    reference.setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                        @Override
+                                        public void onComplete(@NonNull Task<Void> task) {
+                                            if (task.isSuccessful()){
+                                                Intent intent = new Intent(SignUp.this, Login.class);
+                                                startActivity(intent);
 
+                                            }else {
+                                                Toast.makeText(SignUp.this,"Error in Signup", Toast.LENGTH_SHORT).show();
+                                            }
+                                        }
+                                    });
+                                }else {
+                                    Toast.makeText(SignUp.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
+                    }
             }
         });
 
-        baclog.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-            }
-        });
+//        back.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                onBackPressed();
+//            }
+//        });
     }
-
-
     public void sign(View view) {
-        Intent intent = new Intent(SignUp.this, SignUp.class);
+        Intent intent = new Intent(SignUp.this, Login.class);
         startActivity(intent);
     }
-//    public void backk(View view) {
-//        onBackPressed();
-//    }
-
-//    @Override
-//    public void onBackPressed() {
-//        AlertDialog.Builder alt = new AlertDialog.Builder(this);
-//        alt.setTitle("Alert !")
-//                .setMessage("Do you want to close")
-//                .setCancelable(true)
-//                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialogInterface, int i) {
-//                        finish();
-//                    }
-//                })
-//                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialogInterface, int i) {
-//                        dialogInterface.cancel();
-//                    }
-//                });
-//        AlertDialog alert = alt.create();
-//        alert.show();
-//    }
-
-
-    // corection password code
-    public static boolean isValid(String passwordhere) {
-        int f1=0, f2=0, f3=0;
-        if (passwordhere.length() <8)
-        {
-            return  false;
-        }
-        else
-        {
-            for (int p =0; p < passwordhere.length(); p++)
-            {
-                if (Character.isLetter(passwordhere.charAt(p)))
-                {
-                    f1=1;
-                }
-            }
-            for (int r =0; r < passwordhere.length(); r++)
-            {
-                if (Character.isDigit(passwordhere.charAt(r)))
-                {
-                    f2=1;
-                }
-            }
-            for (int s = 0; s < passwordhere.length(); s++)
-            {
-                char c = passwordhere.charAt(s);
-                if(c>=33 && c<=46 || c==64)
-                {
-                    f3=1;
-                }
-            }
-            if(f1==1 && f2== 1 && f3==1)
-                return true;
-            return  false;
-        }
-    }
-
-    // Email validation check
-    public static boolean isValidEmail(CharSequence target)
-    {
-        return Patterns.EMAIL_ADDRESS.matcher(target).matches();
-    }
-// should i connect database
 }

@@ -44,7 +44,7 @@
         app:layout_constraintVertical_bias="1.0">
 
         <Button
-            android:id="@+id/login2"
+            android:id="@+id/signup"
             android:layout_width="300dp"
             android:layout_height="56dp"
             android:background="@drawable/btn_bg"
@@ -74,7 +74,7 @@
             app:layout_constraintVertical_bias="0.05" />
 
         <EditText
-            android:id="@+id/lemail"
+            android:id="@+id/semail"
             android:layout_width="348dp"
             android:layout_height="56dp"
             android:background="@drawable/input_bg"
@@ -105,7 +105,7 @@
             app:layout_constraintVertical_bias="0.174" />
 
         <EditText
-            android:id="@+id/lrepassword"
+            android:id="@+id/srepassword"
             android:layout_width="343dp"
             android:layout_height="55dp"
             android:background="@drawable/input_bg"
@@ -120,7 +120,7 @@
             app:layout_constraintVertical_bias="0.693" />
 
         <EditText
-            android:id="@+id/lpassword"
+            android:id="@+id/spassword"
             android:layout_width="344dp"
             android:layout_height="53dp"
             android:background="@drawable/input_bg"
