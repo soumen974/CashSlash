@@ -53,7 +53,7 @@ public class SignUp extends AppCompatActivity {
         Repass = (EditText)findViewById(R.id.srepassword);
         Signup =(Button)findViewById(R.id.signup);
 
-        back =(Button)findViewById(R.id.back);
+        back =(Button)findViewById(R.id.backlogin);
 
 
 
@@ -104,12 +104,12 @@ public class SignUp extends AppCompatActivity {
             }
         });
 
-//        back.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                onBackPressed();
-//            }
-//        });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
     }
     public void sign(View view) {
         Intent intent = new Intent(SignUp.this, Login.class);
