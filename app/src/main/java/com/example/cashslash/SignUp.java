@@ -64,43 +64,43 @@ public class SignUp extends AppCompatActivity {
                 String pass = Pass.getText().toString();
                 String repass = Repass.getText().toString();
                 String status = "I am using CashSlash";
-                    if (TextUtils.isEmpty(mail) || TextUtils.isEmpty(pass) || TextUtils.isEmpty(repass))
-                    {
-                        Toast.makeText(SignUp.this,"Please enter valid information", Toast.LENGTH_SHORT).show();
-                    } else if (!mail.matches(EmailPattern)) {
-                        Email.setError("Type a valid Email");
-                    } else if (pass.length()<6) {
-                        Pass.setError("Password must be 6 characters or more");
-                    } else if (!pass.equals(repass)) {
-                        Pass.setError("Password doesn't match");
-                    }else {
-                        auth.createUserWithEmailAndPassword(mail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()){
-                                    String id = task.getResult().getUser().getUid();
-                                    DatabaseReference reference = database.getReference().child("user").child(id);
-                                    StorageReference storageReference = storage.getReference().child("Upload").child(id);
+                if (TextUtils.isEmpty(mail) || TextUtils.isEmpty(pass) || TextUtils.isEmpty(repass))
+                {
+                    Toast.makeText(SignUp.this,"Please enter valid information", Toast.LENGTH_SHORT).show();
+                } else if (!mail.matches(EmailPattern)) {
+                    Email.setError("Type a valid Email");
+                } else if (pass.length()<6) {
+                    Pass.setError("Password must be 6 characters or more");
+                } else if (!pass.equals(repass)) {
+                    Pass.setError("Password doesn't match");
+                }else {
+                    auth.createUserWithEmailAndPassword(mail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()){
+                                String id = task.getResult().getUser().getUid();
+                                DatabaseReference reference = database.getReference().child("user").child(id);
+                                StorageReference storageReference = storage.getReference().child("Upload").child(id);
 
-                                    Users users = new Users(id,mail,pass,status);
-                                    reference.setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                        @Override
-                                        public void onComplete(@NonNull Task<Void> task) {
-                                            if (task.isSuccessful()){
-                                                Intent intent = new Intent(SignUp.this, Login.class);
-                                                startActivity(intent);
+                                Users users = new Users(id,mail,pass,status);
+                                reference.setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<Void> task) {
+                                        if (task.isSuccessful()){
+                                            Intent intent = new Intent(SignUp.this, Login.class);
+                                            startActivity(intent);
 
-                                            }else {
-                                                Toast.makeText(SignUp.this,"Error in Signup", Toast.LENGTH_SHORT).show();
-                                            }
+                                        }else {
+                                            Toast.makeText(SignUp.this,"Error in Signup", Toast.LENGTH_SHORT).show();
                                         }
-                                    });
-                                }else {
-                                    Toast.makeText(SignUp.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                                }
+                                    }
+                                });
+                            }else {
+                                Toast.makeText(SignUp.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             }
-                        });
-                    }
+                        }
+                    });
+                }
             }
         });
 
