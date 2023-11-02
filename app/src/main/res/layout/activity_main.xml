@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,15 +8,93 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile"
-        android:layout_width="151dp"
-        android:layout_height="130dp"
+        android:layout_width="190dp"
+        android:layout_height="175dp"
         android:src="@drawable/userimg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.226" />
+        app:layout_constraintVertical_bias="0.129" />
+
+    <TextView
+        android:id="@+id/txFirst"
+        android:layout_width="109dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="36dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/abeezee"
+        android:gravity="center"
+        android:text="First Name"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        app:layout_constraintBottom_toTopOf="@+id/inputfirstname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        app:layout_constraintVertical_bias="0.776" />
+
+    <EditText
+        android:id="@+id/inputfirstname"
+        android:layout_width="294dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/bg__input"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+    <EditText
+        android:id="@+id/inputlastname"
+        android:layout_width="294dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg__input"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txlast" />
+
+    <TextView
+        android:id="@+id/txlast"
+        android:layout_width="109dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="76dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/abeezee"
+        android:gravity="center"
+        android:text="Last Name"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputfirstname" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="187dp"
+        android:layout_height="52dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/abeezee_italic"
+        android:text="Save"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputlastname"
+        app:layout_constraintVertical_bias="0.45" />
 
 
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,13 +1,15 @@
 package com.example.cashslash;
 
 public class Users {
-    String profilepic,mail,userName,password,userId,lastMessage,status;
+    String profilepic,mail,password,userId,lastMessage,status,firstName,lastName;
 
-    public Users(String id, String mail, String pass, String status){
+    public Users(String id, String mail, String pass, String status, String firstName, String lastName){
         this.userId = id;
         this.mail = mail;
         this.password = pass;
         this.status = status;
+        this.firstName = firstName;
+        this.lastName = lastName;
 
     }
 
@@ -26,15 +28,6 @@ public class Users {
     public void setMail(String mail) {
         this.mail = mail;
     }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
     public String getPassword() {
         return password;
     }
@@ -65,5 +58,21 @@ public class Users {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 }
