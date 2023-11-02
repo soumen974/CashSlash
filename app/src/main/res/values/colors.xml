@@ -2,9 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="buttonColor">#FF009E</color>
-    <color name="buttonColor1">#FF0000</color>
-    <color name="buttonColor2">#F7CF00</color>
-    <color name="buttonColor3">#FFBF23</color>
-    <color name="buttonColor4">#38FDD7</color>
+    <color name="pink">#FF009E</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#F7CF00</color>
+    <color name="orange">#FFBF23</color>
+    <color name="cyan">#38FDD7</color>
+    <color name="violet">#3F0243</color>
 </resources>

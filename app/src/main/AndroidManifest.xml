@@ -13,28 +13,35 @@
         android:theme="@style/Theme.CashSlash"
         tools:targetApi="31" >
         <activity
+            android:name=".Forgot_Password"
+            android:exported="false" />
+        <activity
             android:name=".new_account"
             android:exported="false" />
         <activity
             android:name=".Homegroup"
             android:exported="false" />
         <activity
-            android:name=".signin"
+            android:name=".Login"
             android:exported="false" />
         <activity
-            android:name=".login"
+            android:name=".SignUp"
             android:exported="false" />
         <activity
             android:name=".Landing_page"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Splash"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" >
         </activity>
 
         <meta-data

@@ -4,51 +4,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/lowerbgjpg"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="233dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="160dp"
-        android:fontFamily="@font/knewave"
-        android:text="CashSlash"
-        android:textAlignment="center"
-        android:textSize="45.44dp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.397" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="178dp"
-        android:layout_height="190dp"
-        android:layout_marginBottom="36dp"
-        android:background="@drawable/uplogo"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="292dp"
-        android:layout_height="57dp"
-        android:layout_marginBottom="296dp"
-        android:fontFamily="@font/kodchasan"
-        android:text="Manage your out flow"
-        android:textAlignment="center"
-        android:textColor="#510063"
-        android:textSize="21sp"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="190dp"
+        android:layout_height="175dp"
+        android:src="@drawable/userimg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <TextView
+        android:id="@+id/txFirst"
+        android:layout_width="109dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="36dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/abeezee"
+        android:gravity="center"
+        android:text="First Name"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        app:layout_constraintBottom_toTopOf="@+id/inputfirstname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        app:layout_constraintVertical_bias="0.776" />
+
+    <EditText
+        android:id="@+id/inputfirstname"
+        android:layout_width="294dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/bg__input"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+    <EditText
+        android:id="@+id/inputlastname"
+        android:layout_width="294dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg__input"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txlast" />
+
+    <TextView
+        android:id="@+id/txlast"
+        android:layout_width="109dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="76dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/abeezee"
+        android:gravity="center"
+        android:text="Last Name"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputfirstname" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="187dp"
+        android:layout_height="52dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/abeezee_italic"
+        android:text="Save"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputlastname"
+        app:layout_constraintVertical_bias="0.45" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
