@@ -3,15 +3,16 @@ package com.example.cashslash;
 public class Users {
     String profilepic,mail,password,userId,lastMessage,status,firstName,lastName;
 
-    public Users(String id, String mail, String pass, String status, String firstName, String lastName){
+    public Users(String id, String mail, String pass, String status, String firstName, String lastName, String imageuri){
         this.userId = id;
         this.mail = mail;
         this.password = pass;
         this.status = status;
         this.firstName = firstName;
         this.lastName = lastName;
-
+        this.profilepic = imageuri; // Add the imageuri field
     }
+
 
     public String getProfilepic() {
         return profilepic;
