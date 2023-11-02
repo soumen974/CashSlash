@@ -17,6 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.StorageReference;
 
 public class SignUp extends AppCompatActivity {
     private EditText Email;
@@ -65,7 +66,7 @@ public class SignUp extends AppCompatActivity {
                                 String id = task.getResult().getUser().getUid();
                                 DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("user").child(id);
 
-                                Users users = new Users(id, mail, pass, status, "", ""); // Initialize first name and last name as empty
+                                Users users = new Users(id, mail, pass, status, "", "",""); // Initialize first name and last name as empty
                                 reference.setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
