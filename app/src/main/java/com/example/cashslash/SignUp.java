@@ -66,13 +66,13 @@ public class SignUp extends AppCompatActivity {
                                 String id = task.getResult().getUser().getUid();
                                 DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("user").child(id);
 
-                                Users users = new Users(id, mail, pass, status, "", "",""); // Initialize first name and last name as empty
+                                Users users = new Users(id, mail, pass, status, "", "","");
                                 reference.setValue(users).addOnCompleteListener(new OnCompleteListener<Void>() {
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
                                         if (task.isSuccessful()) {
                                             Intent intent = new Intent(SignUp.this, MainActivity.class);
-                                            intent.putExtra("userId", id); // Pass the user ID to MainActivity
+                                            intent.putExtra("userId", id);
                                             startActivity(intent);
                                         } else {
                                             Toast.makeText(SignUp.this, "Error in Signup", Toast.LENGTH_SHORT).show();

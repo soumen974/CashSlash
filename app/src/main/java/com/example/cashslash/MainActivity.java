@@ -86,7 +86,11 @@ public class MainActivity extends AppCompatActivity {
                                             DatabaseReference userRef = FirebaseDatabase.getInstance().getReference().child("user").child(userId);
                                             userRef.child("firstName").setValue(FirstName);
                                             userRef.child("lastName").setValue(LastName);
-                                            userRef.child("profilepic").setValue(imageuri); // Save the image URL in the database
+                                            userRef.child("profilepic").setValue(imageuri);
+
+                                            Intent intent = new Intent(MainActivity.this, Homegroup.class);
+                                            startActivity(intent);
+                                            finish();
 
                                             Toast.makeText(MainActivity.this, "Saved", Toast.LENGTH_SHORT).show();
                                         }
