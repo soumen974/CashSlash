@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Group">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <ImageView
+        android:layout_width="224dp"
+        android:layout_height="297dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="304dp"
+        android:src="@drawable/groupimgview" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/groupbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Group" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
 
-</FrameLayout>
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
