@@ -8,8 +8,8 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile"
-        android:layout_width="71dp"
-        android:layout_height="65dp"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="12dp"
@@ -24,8 +24,8 @@
 
     <Button
         android:id="@+id/nav"
-        android:layout_width="46dp"
-        android:layout_height="29dp"
+        android:layout_width="32dp"
+        android:layout_height="19dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="28dp"
@@ -40,21 +40,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="21dp"
-        android:layout_marginTop="157dp"
+        android:layout_marginTop="95dp"
         android:background="@drawable/rounded_border" />
-
-    <TextView
-        android:layout_width="98dp"
-        android:layout_height="36dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="191dp"
-        android:layout_marginEnd="46dp"
-        android:background="@drawable/white_rounded_border"
-        android:gravity="center"
-        android:text="Rs. 0.00"
-        android:textAlignment="center"
-        android:textColor="#F7CF00" />
 
     <TextView
         android:id="@+id/textView3"
@@ -63,7 +50,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="46dp"
-        android:layout_marginTop="191dp"
+        android:layout_marginTop="129dp"
         android:background="@drawable/white_rounded_border"
         android:gravity="center"
         android:text="Rs 0.00"
@@ -71,15 +58,17 @@
         android:textColor="#F44336" />
 
     <TextView
-        android:id="@+id/showName"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_width="78dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="98dp"
-        android:layout_marginTop="42dp"
-        android:text="Ritesh Das"
-        android:textSize="16.84dp" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="54dp"
+        android:background="#FFEB3B"
+        android:text="Expence"
+        android:textAlignment="center"
+        android:textColor="#000000" />
 
     <TextView
         android:id="@+id/textView6"
@@ -88,35 +77,46 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="54dp"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="178dp"
         android:background="#F44336"
         android:text="Borrowed"
         android:textAlignment="center"
         android:textColor="#FFFFFF" />
 
     <TextView
-        android:id="@+id/textView7"
-        android:layout_width="78dp"
-        android:layout_height="wrap_content"
+        android:layout_width="98dp"
+        android:layout_height="36dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="240dp"
-        android:layout_marginEnd="54dp"
-        android:background="#FFEB3B"
-        android:text="Expence"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="46dp"
+        android:background="@drawable/white_rounded_border"
+        android:gravity="center"
+        android:text="Rs. 0.00"
         android:textAlignment="center"
-        android:textColor="#000000" />
+        android:textColor="#F7CF00" />
+
+    <TextView
+        android:id="@+id/showName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="30dp"
+        android:hint="Name"
+        android:textSize="16.84dp" />
 
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="510dp"
+        android:layout_height="582dp"
         android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="33dp"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="67dp" />
 
