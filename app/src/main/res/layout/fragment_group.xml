@@ -14,15 +14,32 @@
         android:src="@drawable/groupimgview" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/groupbar"
+        android:id="@+id/grouplist"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="789dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="125dp">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/createGroup"
+        android:layout_width="384dp"
+        android:layout_height="69dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="30dp"
+        android:background="#FF9800"
+        android:paddingLeft="20dp"
+        android:text="Group"
+        android:textAlignment="viewStart"
+        android:textSize="25dp" />
 
 </RelativeLayout>

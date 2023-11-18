@@ -10,7 +10,8 @@ public class Users {
         this.status = status;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.profilepic = imageuri; // Add the imageuri field
+        this.profilepic = imageuri;
+//        this.gpname = groupname;
     }
 
 
@@ -76,4 +77,12 @@ public class Users {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+//    public String getGpname() {
+//        return gpname;
+//    }
+//
+//    public void setGpname(String gpname) {
+//        this.gpname = gpname;
+//    }
 }

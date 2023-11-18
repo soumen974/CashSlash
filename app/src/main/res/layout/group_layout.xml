@@ -11,7 +11,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/grlog"
             android:layout_width="52dp"
             android:layout_height="52dp"
             android:layout_marginStart="13dp"
@@ -30,11 +30,13 @@
             >
 
             <TextView
+                android:id="@+id/grname"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 android:fontFamily="@font/barlow_semi_condensed_regular"
                 android:text="Name"
-                android:paddingLeft="10dp"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:background="@color/cyan"
                 android:textColor="@color/black"
                 android:textSize="23.40dp"
