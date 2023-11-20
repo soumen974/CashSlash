@@ -1,11 +1,12 @@
 plugins {
     id 'com.android.application'
     id 'com.google.gms.google-services'
+
 }
 
 android {
     namespace 'com.example.cashslash'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.cashslash"
@@ -32,6 +33,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    buildToolsVersion '34.0.0'
 }
 
 dependencies {
