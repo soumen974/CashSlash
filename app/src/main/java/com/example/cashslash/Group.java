@@ -11,11 +11,13 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.auth.FirebaseAuth;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -31,10 +33,12 @@ public class Group extends Fragment {
     private Button createGroupButton;
     private EditText groupNameEditText;
     private FirebaseAuth auth;
+
     private FirebaseDatabase database;
     private RecyclerView groupRecyclerView;
     private GroupAdapter adapter;
     private ArrayList<GroupsCr> groupsCrArrayList;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -46,6 +50,7 @@ public class Group extends Fragment {
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
         groupRecyclerView = rootView.findViewById(R.id.grouplist);
+
 
         createGroupButton = rootView.findViewById(R.id.createGroup);
         groupNameEditText = rootView.findViewById(R.id.GroupName);
@@ -81,6 +86,7 @@ public class Group extends Fragment {
                 // Handle onCancelled if needed
             }
         });
+
 
         groupRecyclerView.setAdapter(adapter);
 
