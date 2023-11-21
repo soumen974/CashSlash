@@ -32,7 +32,9 @@
 
             <TextView
                 android:id="@+id/grname"
+
                 android:layout_width="269dp"
+
                 android:layout_height="52dp"
                 android:onClick="chat"
                 android:background="@color/cyan"
@@ -41,6 +43,8 @@
                 android:paddingEnd="15dp"
                 android:text="Name"
                 android:textAlignment="center"
+
+
                 android:textColor="@color/black"
                 android:textSize="23.40dp">
 

@@ -1,5 +1,6 @@
 package com.example.cashslash;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -12,11 +13,14 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.auth.FirebaseAuth;
 
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+
 
 public class Homegroup extends AppCompatActivity {
     ActivityHomegroupBinding binding;
@@ -28,6 +32,7 @@ public class Homegroup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityHomegroupBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
 
         auth = FirebaseAuth.getInstance();
         userRef = FirebaseDatabase.getInstance().getReference().child("user").child(auth.getCurrentUser().getUid());
@@ -56,6 +61,7 @@ public class Homegroup extends AppCompatActivity {
             }
         });
 
+
         binding.bottomNavigation.setOnItemSelectedListener(item -> {
             if (item.getItemId() == R.id.group) {
                 replaceFragment(new Group());
@@ -69,6 +75,9 @@ public class Homegroup extends AppCompatActivity {
 
             return true;
         });
+//
+//        // Load user details (name and image) from Firebase
+//        loadUserDetails();
     }
 
     private void replaceFragment(Fragment fragment){
@@ -77,4 +86,5 @@ public class Homegroup extends AppCompatActivity {
         fragmentTransaction.replace(R.id.container, fragment);
         fragmentTransaction.commit();
     }
+
 }

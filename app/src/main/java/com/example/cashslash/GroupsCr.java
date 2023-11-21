@@ -1,6 +1,7 @@
 package com.example.cashslash;
 
 public class GroupsCr {
+
     private String gpname;
 
     public GroupsCr() {
@@ -9,6 +10,7 @@ public class GroupsCr {
 
     public GroupsCr(String gpname) {
         this.gpname = gpname;
+
     }
 
     public String getGpname() {
