@@ -1,10 +1,16 @@
 package com.example.cashslash;
 
 public class GroupsCr {
-    String gpname;
 
-    public GroupsCr(String groupname){
-       this.gpname = groupname;
+    private String gpname;
+
+    public GroupsCr() {
+        // Required default constructor
+    }
+
+    public GroupsCr(String gpname) {
+        this.gpname = gpname;
+
     }
 
     public String getGpname() {
