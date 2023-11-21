@@ -37,13 +37,14 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="371dp"
+        android:layout_width="match_parent"
         android:layout_height="137dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="95dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/rounded_border" />
 
     <TextView
@@ -53,7 +54,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="46dp"
-        android:layout_marginTop="129dp"
+        android:layout_marginTop="110dp"
         android:background="@drawable/white_rounded_border"
         android:gravity="center"
         android:text="Rs 0.00"
@@ -62,12 +63,13 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="78dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="6dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="178dp"
-        android:layout_marginEnd="54dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="60dp"
         android:background="#FFEB3B"
         android:text="Expence"
         android:textAlignment="center"
@@ -75,12 +77,13 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="78dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="6dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="178dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="160dp"
         android:background="#F44336"
         android:text="Borrowed"
         android:textAlignment="center"
@@ -91,7 +94,7 @@
         android:layout_height="36dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="129dp"
+        android:layout_marginTop="110dp"
         android:layout_marginEnd="46dp"
         android:background="@drawable/white_rounded_border"
         android:gravity="center"
@@ -113,15 +116,15 @@
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="582dp"
+        android:layout_height="606dp"
         android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="0dp"
-        android:layout_marginBottom="67dp" />
+        android:layout_marginBottom="66dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

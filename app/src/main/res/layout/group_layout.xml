@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="10dp"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="13dp">
+    android:layout_margin="0dp"
+    android:id="@+id/Amtcal">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,9 +14,9 @@
 
         <ImageView
             android:id="@+id/grlog"
-            android:layout_width="52dp"
-            android:layout_height="52dp"
-            android:layout_marginStart="13dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="9dp"
             android:layout_marginTop="13dp"
             android:layout_marginEnd="13dp"
             android:layout_marginBottom="10dp"
@@ -33,10 +34,9 @@
             <TextView
                 android:id="@+id/grname"
 
-                android:layout_width="269dp"
+                android:layout_width="280dp"
 
-                android:layout_height="52dp"
-                android:onClick="chat"
+                android:layout_height="48dp"
                 android:background="@color/cyan"
                 android:fontFamily="@font/barlow_semi_condensed_regular"
                 android:gravity="center"
@@ -46,7 +46,7 @@
 
 
                 android:textColor="@color/black"
-                android:textSize="23.40dp">
+                android:textSize="20dp">
 
             </TextView>
 
