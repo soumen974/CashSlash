@@ -6,6 +6,7 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
 
     </style>
+
     <style name="CustomEditTextStyle">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:alpha">0.7</item> <!-- Adjust the alpha value (0.0 to 1.0) -->
