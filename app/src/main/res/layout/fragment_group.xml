@@ -6,13 +6,6 @@
     tools:context=".Group">
 
 
-    <ImageView
-        android:layout_width="224dp"
-        android:layout_height="297dp"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="304dp"
-        android:src="@drawable/groupimgview" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/grouplist"
         android:layout_width="match_parent"

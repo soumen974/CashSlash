@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
         Lname = findViewById(R.id.inputlastname);
         rg_profileImg = findViewById(R.id.profile);
 
+
+
         rg_profileImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
