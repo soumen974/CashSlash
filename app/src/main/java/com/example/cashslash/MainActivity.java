@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -35,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     String imageuri;
     String userId;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
         userId = getIntent().getStringExtra("userId");
 
         SaveCh = findViewById(R.id.save);
+
+
         Fname = findViewById(R.id.inputfirstname);
         Lname = findViewById(R.id.inputlastname);
         rg_profileImg = findViewById(R.id.profile);
@@ -131,4 +137,9 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+
+
+
+
 }
