@@ -47,5 +47,6 @@
     </string>
 
     <string name="title_activity_group_charts">GroupCharts</string>
+    <string name="title_activity_group_friend">GroupFriend</string>
 
 </resources>
