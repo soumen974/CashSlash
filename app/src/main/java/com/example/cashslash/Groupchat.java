@@ -1,14 +1,14 @@
 package com.example.cashslash;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-public class GroupChat extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class Groupchat extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_group_chat);
+        setContentView(R.layout.activity_groupchat);
     }
 }
