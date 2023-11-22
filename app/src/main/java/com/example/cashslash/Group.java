@@ -62,12 +62,12 @@ public class Group extends Fragment {
             }
         });
 
-        // Initialize RecyclerView
+
         groupRecyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
         groupsCrArrayList = new  ArrayList<GroupsCr>();
         adapter = new GroupAdapter(Group.this, groupsCrArrayList);
 
-        // Retrieve group data from Firebase
+
         DatabaseReference reference = database.getReference().child("groups").child(auth.getCurrentUser().getUid());
         reference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -104,9 +104,9 @@ public class Group extends Fragment {
             public void onClick(View v) {
                 String groupName = groupNameEditTextPopup.getText().toString().trim();
                 if (!groupName.isEmpty()) {
-                    // Call a method to store the group name in the database
+
                     storeGroupNameInDatabase(groupName);
-                    myDialog.dismiss(); // Dismiss the popup after creating the group
+                    myDialog.dismiss();
                 } else {
                     Toast.makeText(requireContext(), "Please enter a group name", Toast.LENGTH_SHORT).show();
                 }
