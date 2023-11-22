@@ -19,6 +19,7 @@
         android:text="Friend"
         android:textAlignment="textStart"
         android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,9 +27,14 @@
         android:id="@+id/friendiconicon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/faq_bg"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="452dp" />
+        android:layout_marginTop="304dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Friendboxbox"
+        app:layout_constraintVertical_bias="0.207"
+        app:srcCompat="@drawable/faq_bg" />
 
     <Button
         android:id="@+id/friendbutton"

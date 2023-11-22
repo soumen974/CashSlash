@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="0dp"
+    android:id="@+id/Amtcal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/profileiimge"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginBottom="10dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/pename"
+
+                android:layout_width="299dp"
+
+                android:layout_height="47dp"
+                android:background="@drawable/show_people_bgn"
+                android:fontFamily="@font/barlow_semi_condensed_regular"
+                android:gravity="center"
+                android:paddingEnd="15dp"
+                android:text="Name"
+                android:textAlignment="center"
+
+
+                android:textColor="@color/black"
+                android:textSize="20dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,6 +1,10 @@
 package com.example.cashslash;
 
 public class Users {
+
+    public Users() {
+        // Default constructor required for calls to DataSnapshot.getValue(Users.class)
+    }
     String profilepic,mail,password,userId,lastMessage,status,firstName,lastName;
 
     public Users(String id, String mail, String pass, String status, String firstName, String lastName, String imageuri){
